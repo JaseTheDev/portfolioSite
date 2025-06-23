@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JaseTheDev</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div id="panelInfo">
+        <div id="panelInsideContent">
+            <img style="max-width: 50%; max-height:50%; display: block; margin: auto;" src="https://news.harvard.edu/wp-content/uploads/2023/11/dog_brains_2500.png">
+        </div>
+    </div>
+
+    <div class="displaygrid">
+        <div style="position: relative;">
+            <img src="WiiDisk.png" id="disk">
+            <div class="mask1">
+                <video src="NotChess.mp4" muted autoplay loop class="slot">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay" id="Not Chess">
+            <div id="hoverBubble">
+                This is some sample text
+                <div style="position: absolute; top:-15%; left:50%; transform:translateX(-50%); width:0;height:0;border-left: 1.5vh solid transparent; border-right:1.5vh solid transparent; border-bottom:1vw solid white;"></div>
+            </div>
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <video src="CivilTown.mp4" muted autoplay loop class="slot"></video>
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay" id="Civil Township">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+        <div style="position: relative;">
+            <div class="mask1">
+                <img src="WiiEmptyElement.gif" class="slot" style="opacity: 0.20;">
+            </div>
+            <img src="GameSlotTransparent.png" class="slotOverlay">
+        </div>
+    </div>
+    <div style="height:30vh;">
+    </div>
+
+    <div class="bottomUI">
+        <div id="clock"></div>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours();
+                let minutes = now.getMinutes();
+                if(minutes < 10) {
+                    minutes = "0"+now.getMinutes();
+                }
+                const time = `${hours}:${minutes}`;
+                document.getElementById('clock').textContent = time;
+            }
+
+            updateClock(); // Initial update
+            setInterval(updateClock, 1000); // Update every second
+        </script>
+
+        <div class="BUI_R">
+            <img src="bottomUI_border_blue_solidbg_large.png" style="transform: scale(1, 0.75); max-width: 50%;">
+            <img src="bottomUI_border_blue_solidbg_large.png" style="transform: scale(-1, 0.75); max-width: 50%;">
+        </div>
+
+        <div id="aboutMii">
+            <img src="Mii.png" style="max-width: 12vw;" id="MiiIMG"><span id="aboutMiiText">(About)</span></img>
+        </div>
+
+        <div id="aboutSite">
+            <img src="aboutSite.png" style="max-width: 12vw;" id="aboutSiteIMG"><span id="aboutSiteText">(JavaScript)</span></img>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
